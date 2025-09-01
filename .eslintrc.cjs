@@ -14,5 +14,10 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // 👇 thêm dòng này
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      { argsIgnorePattern: '^_' }, // cho phép biến bắt đầu bằng _ không bị coi là unused
+    ],
   },
 }
